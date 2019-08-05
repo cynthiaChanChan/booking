@@ -37,3 +37,22 @@ a {
 	color: inherit;
 	text-decoration: none;
 }
+
+input {
+	font-display: inherit;
+	font-size: inherit;
+	color: inherit;
+	border: none;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+button {
+	border: none;
+	
+	&:focus {
+		outline: none;
+	}
+}
