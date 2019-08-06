@@ -1,0 +1,22 @@
+.overview {
+    display: flex;
+    align-items: center;
+    &__heading {
+
+    }
+
+    &__stars {
+        margin-right: auto; //it's better than flex: 1
+    }
+
+    &__icon-star,
+    &__icon-location {
+        width: $icon-size;
+        height: $icon-size;
+        fill: $color-primary;
+    }
+
+    &__location {
+       
+    }
+}

@@ -199,6 +199,23 @@ body {
     fill: currentColor;
     margin-right: 2rem; }
 
+.gallery {
+  display: flex; }
+  .gallery__photo {
+    display: block;
+    width: 100%; }
+
+.overview {
+  display: flex;
+  align-items: center; }
+  .overview__icon-star, .overview__icon-location {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: #eb2f64; }
+  .overview__location {
+    flex: 1;
+    text-align: right; }
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
