@@ -1,0 +1,35 @@
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem 0;
+    padding: 3rem 0;
+    border-top: $line;
+    border-bottom: $line;
+
+    &__item {
+        flex: 0 0 50%;
+        padding-left: 3rem;
+        margin-bottom: .7rem;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            height: 1rem;
+            width: 1rem;
+            margin-right: .7rem;
+            background-image: url("../img/chevron-right.svg");
+            background-size: cover;
+
+            @supports (-webkit-mask-image: url("../img/chevron-right.svg"))
+                or (mask-image: url("../img/chevron-right.svg")) {
+                    background: none;
+                    background-color: $color-primary;
+                    -webkit-mask-image: url("../img/chevron-right.svg");
+                    -webkit-mask-size: cover;
+                    mask-image: url("../img/chevron-right.svg");
+                    mask-size: cover;
+            }
+
+        }
+    }
+}

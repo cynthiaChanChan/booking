@@ -13,9 +13,12 @@
 @import "components/side-nav";
 @import "components/gallery";
 @import "components/overview";
+@import "components/list";
+@import "components/recommend";
 
 @import "layout/container";
 @import "layout/header";
 @import "layout/sidebar";
+@import "layout/detail";
 
 @import "pages/home";

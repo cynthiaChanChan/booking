@@ -1,0 +1,21 @@
+.detail {
+    display: flex;
+    padding: $detail-gutter;
+    background-color: $color-grey-light-1;
+    border-bottom: $line;
+}
+
+.description {
+    font-size: 1.4rem;
+    background-color: $color-white;
+    box-shadow: $shadow-light;
+    padding: 3rem;
+    flex: 0 0 60%;
+    margin-right: $detail-gutter;
+}
+
+.user-reviews {
+    flex: 1;
+    background-color: $color-white;
+    box-shadow: $shadow-light;
+}
