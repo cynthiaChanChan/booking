@@ -89,7 +89,7 @@ button {
     outline: none; }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, Sans-Serif;
   font-weight: 400;
   line-height: 1.6;
   color: #777; }
@@ -103,8 +103,13 @@ body {
   background-color: transparent;
   cursor: pointer;
   transition: all .2s; }
+  .btn-inline span {
+    margin-left: 3px;
+    transition: margin-left  .2s; }
   .btn-inline:hover {
     color: #333; }
+    .btn-inline:hover span {
+      margin-left: 8px; }
   .btn-inline:focus {
     backface-visibility: hidden;
     animation: pulsate 1s infinite; }
@@ -314,6 +319,51 @@ body {
     .recommend__photo:not(:last-child) {
       margin-right: -1.5rem; }
 
+.review {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  padding: 3rem;
+  margin-bottom: 3.5rem;
+  overflow: hidden; }
+  .review__text {
+    position: relative;
+    z-index: 1; }
+  .review__user {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem; }
+  .review__photo {
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%; }
+  .review__user-box {
+    margin: 0 auto 0 1.3rem;
+    line-height: 1; }
+  .review__user-name {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: .4rem; }
+  .review__user-date {
+    color: #999;
+    font-size: 1rem;
+    font-weight: 700; }
+  .review__rating {
+    color: #eb2f64;
+    font-size: 2.2rem;
+    font-weight: 300; }
+  .review::before {
+    content: "\201C";
+    position: absolute;
+    display: block;
+    top: -2.75rem;
+    left: -1rem;
+    font-size: 20rem;
+    color: #f4f2f2;
+    font-family: Helvetica, Arial, Sans-Serif;
+    line-height: 1; }
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
@@ -351,10 +401,10 @@ body {
   display: flex;
   padding: 4.5rem;
   background-color: #faf9f9;
-  border-bottom: 1px solid #f4f2f2; }
+  border-bottom: 1px solid #f4f2f2;
+  font-size: 1.4rem; }
 
 .description {
-  font-size: 1.4rem;
   background-color: #fff;
   box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
   padding: 3rem;
@@ -363,8 +413,9 @@ body {
 
 .user-reviews {
   flex: 1;
-  background-color: #fff;
-  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06); }
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .content {
   display: flex; }

@@ -1,0 +1,61 @@
+.review {
+    position: relative;
+    background-color: $color-white;
+    box-shadow: $shadow-light;
+    padding: 3rem;
+    margin-bottom: 3.5rem;
+    overflow: hidden;
+
+    &__text {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__user {
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    &__photo {
+        height: 4.5rem;
+        width: 4.5rem;
+        border-radius: 50%;
+    }
+
+    &__user-box {
+        margin: 0 auto 0 1.3rem;
+        line-height: 1;
+    }
+
+    &__user-name {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1.1rem;
+        margin-bottom: .4rem;
+    }
+
+    &__user-date {
+        color: $color-grey-dark-3;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    &__rating {
+        color: $color-primary;
+        font-size: 2.2rem;
+        font-weight: 300;
+    }
+
+    &::before {
+        content: "\201C";
+        position: absolute;
+        display: block;
+        top: -2.75rem;
+        left: -1rem;
+        font-size: 20rem;
+        color: $color-grey-light-2;
+        font-family: Helvetica, Arial, Sans-Serif; // 三个都写-PC，Mac都会选Helvetica. 只写Sans-Serif-PC会用Arial，Mac会用Helvetica
+        line-height: 1;
+    }
+}
